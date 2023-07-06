@@ -1,0 +1,9 @@
+.div-power-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .wrapper-power-div {
+    background-color: #6c757d;
+    flex-grow: 1;
+  }
+}

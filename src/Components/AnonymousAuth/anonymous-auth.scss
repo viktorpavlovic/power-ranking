@@ -1,0 +1,29 @@
+.anonymous-auth-div {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 60px;
+  section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    input {
+      margin-top: 10px;
+      padding: 3px;
+      width: 80vw;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+  button {
+    margin-top: 10px;
+    width: 80vw;
+    padding: 10px;
+    background-color: #212529;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

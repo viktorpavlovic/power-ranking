@@ -1,0 +1,15 @@
+.div-header {
+  height: 10vh;
+  background-color: #212529;
+  color: #fff;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+  }
+  img {
+    width: 20px;
+  }
+}
