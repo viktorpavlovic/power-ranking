@@ -6,7 +6,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { useForm } from "react-hook-form";
 import "./anonymous-auth.scss";
 
-const AnonymusAuth = ({ setAccessToken }) => {
+const AnonymusAuth = ({ setAccessToken, setUid }) => {
   const navigate = useNavigate();
   const {
     register,
@@ -28,6 +28,10 @@ const AnonymusAuth = ({ setAccessToken }) => {
         );
         navigate("/power_page");
       }
+      localStorage.setItem(
+        "uid",
+        JSON.stringify(cred.user.uid)
+      );
     });
   };
 
