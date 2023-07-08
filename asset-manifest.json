@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/power-ranking/static/css/main.2a5ebdb2.css",
+    "main.js": "/power-ranking/static/js/main.a1ebf540.js",
+    "static/media/american-football-svgrepo-com.svg": "/power-ranking/static/media/american-football-svgrepo-com.72fe106e6f94c5a36509564719e09ad9.svg",
+    "index.html": "/power-ranking/index.html",
+    "main.2a5ebdb2.css.map": "/power-ranking/static/css/main.2a5ebdb2.css.map",
+    "main.a1ebf540.js.map": "/power-ranking/static/js/main.a1ebf540.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a5ebdb2.css",
+    "static/js/main.a1ebf540.js"
+  ]
+}
