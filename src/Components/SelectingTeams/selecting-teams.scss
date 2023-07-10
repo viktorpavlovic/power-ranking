@@ -1,0 +1,21 @@
+.div-selecting-teams{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    option{
+        text-align: center;
+    }
+    button{
+        margin:10px 0;
+        width: 100%;
+        background-color: black;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .single-select-div{
+        text-align: center;
+    }
+}

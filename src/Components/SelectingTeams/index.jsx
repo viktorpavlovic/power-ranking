@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import { useForm } from "react-hook-form";
+import "./selecting-teams.scss"
 
 const SelectingTeams = ({ allTeams }) => {
   let getUid = localStorage.getItem("uid");
@@ -56,7 +57,7 @@ const SelectingTeams = ({ allTeams }) => {
               onChange={(e) => handleChange(index, e.target.value)}
               required
             >
-              <option value="">Select a team</option>
+              <option value="">Izaberi tim</option>
               {watch(`team-${index}`) ? (
                 <option value={watch(`team-${index}`)}>
                   {watch(`team-${index}`)}
@@ -70,7 +71,7 @@ const SelectingTeams = ({ allTeams }) => {
             </select>
           </div>
         ))}
-        <button>Submit</button>
+        <button>Power renkuj </button>
       </form>
     </div>
   );
