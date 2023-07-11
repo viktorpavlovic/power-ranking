@@ -1,26 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import { useForm } from "react-hook-form";
-import "./selecting-teams.scss"
+import SuccessModal from "../SuccessRanked";
+import "./selecting-teams.scss";
 
 const SelectingTeams = ({ allTeams }) => {
   let getUid = localStorage.getItem("uid");
   let uid = getUid.slice(1, -1);
   const { handleSubmit, setValue, watch } = useForm();
+  const [yourRanking, setYourRanking] = useState(
+    JSON.parse(localStorage.getItem("yourRanking")) || []
+  );
+  const [submited, setSubmited] = useState(
+    localStorage.getItem("submited") === "true"
+  );
   const userDocRef = doc(db, "users", uid);
   const availableTeams = allTeams.filter((team) => {
     const selectedTeams = watch();
     return !Object.values(selectedTeams).includes(team);
   });
-
-  useEffect(() => {
-    const selectedTeams = watch();
-    const ranking = Object.values(selectedTeams).filter(
-      (value) => value !== ""
-    );
-    console.log(ranking);
-  }, [watch]);
+  const teamRef = useRef(null);
 
   const onSubmit = async (data) => {
     try {
@@ -34,8 +34,11 @@ const SelectingTeams = ({ allTeams }) => {
       await updateDoc(userDocRef, {
         teams: teamsArray,
       });
-      localStorage.clear();
-      window.location.reload();
+      setYourRanking(teamsArray);
+      setSubmited(true);
+      localStorage.setItem("submited", "true");
+      localStorage.setItem("yourRanking", JSON.stringify(teamsArray));
+      teamRef.current.scrollIntoView({ behavior: "smooth" });
     } catch (error) {
       console.error("Error adding teams:", error);
     }
@@ -46,7 +49,7 @@ const SelectingTeams = ({ allTeams }) => {
   };
 
   return (
-    <div className="div-selecting-teams">
+    <div className="div-selecting-teams" ref={teamRef}>
       <form onSubmit={handleSubmit(onSubmit)}>
         {allTeams.map((_, index) => (
           <div key={index} className="single-select-div">
@@ -71,8 +74,9 @@ const SelectingTeams = ({ allTeams }) => {
             </select>
           </div>
         ))}
-        <button>Power renkuj </button>
+        <button>Power renkuj</button>
       </form>
+      {submited && <SuccessModal yourRanking={yourRanking} />}
     </div>
   );
 };

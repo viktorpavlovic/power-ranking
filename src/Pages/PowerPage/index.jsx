@@ -34,7 +34,6 @@ const PowerPage = ({uid}) => {
     };
     fetchAllUsers();
   }, []);
-  console.log(allUsers)
   
   return (
     <div className="div-power-page">
