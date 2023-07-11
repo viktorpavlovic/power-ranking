@@ -1,28 +1,164 @@
-.success-modal-div{
-    width: 100%;
-    height: 100%;
-    background-color: #6c757d;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    div{
-        padding: 5px;
-    }
-    h3{
-        text-align: center;
-        margin-top: 10px;
-        width: 80%;
-        font-weight: 400;
-    }
-    .again-btn{
+.success-modal-div {
+  width: 100%;
+  height: 100%;
+  background-color: #6c757d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    padding: 5px;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 10px;
+    width: 80%;
+    font-weight: 400;
+  }
+  .again-btn {
     font-size: 20px;
-        width: 80%;
-        padding: 10px;
-        margin-top: 10px;
-        cursor: pointer;
-    }
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
+.single-team {
+  width: 70%;
+  text-align: center;
+  margin-top: 10px;
+}
+.team-pittsburgh-steelers {
+  background-color: #FFB612;
+  color: #101820;
+}
+.team-cleveland-browns {
+  background-color: #311d00;
+  color: #ff3c00;
+}
+.team-cincinnati-bengals {
+  background-color: #fb4f14;
+  color: #000;
+}
+.team-arizona-cardinals {
+  background-color: #97233f;
+  color: #000;
+}
+.team-atlanta-falcons {
+  background-color: #a71930;
+  color: blacl;
+}
+.team-baltimore-ravens {
+  background-color: #241773;
+  color: #000;
+}
+.team-buffalo-bills {
+  background-color: #00338d;
+  color: #c60c30;
+}
+.team-carolina-panthers {
+  background-color: #0085ca;
+  color: #101820;
+}
+.team-chicago-bears {
+  background-color: #0b162a;
+  color: #c83803;
+}
+
+.team-dallas-cowboys {
+  background-color: #003594;
+  color: #041e42;
+}
+.team-denver-broncos {
+  background-color: #fb4f14;
+  color: #002244;
+}
+.team-detroit-lions {
+  background-color: #0076b6;
+  color: #b0b7bc;
+}
+.team-green-bay-packers {
+  background-color: #203731;
+  color: #ffb612;
+}
+.team-houston-texans {
+  background-color: #03202f;
+  color: #a71930;
+}
+.team-indianapolis-colts {
+  background-color: #002c5f;
+  color: #a2aaad;
+}
+.team-jacksonville-jaguars {
+  background-color: #101820;
+  color: #d7a22a;
+}
+.team-kansas-city-chiefs {
+  background-color: #e31837;
+  color: #ffb81c;
+}
+.team-las-vegas-raiders {
+  background-color: #000;
+  color: #A5ACAF;
+}
+.team-los-angeles-chargers {
+  background-color: #0080c6;
+  color: #ffc20e;
+}
+
+.team-los-angeles-rams {
+  background-color: #003594;
+  color: #ffa300;
+}
+.team-miami-dolphins {
+  background-color: #008e97;
+  color: #fc4c02;
+}
+.team-minnesota-vikings {
+  background-color: #4F2683;
+  color: #FFC62F;
+}
+.team-new-england-patriots {
+  background-color: #002244;
+  color: #C60C30;
+}
+.team-new-orleans-saints {
+  background-color: #D3BC8D;
+  color: #101820;
+}
+.team-new-york-giants {
+  background-color: #0B2265;
+  color: #A71930;
+}
+.team-new-york-jets {
+  background-color: #125740;
+  color: #000000;
+}
+.team-philadelphia-eagles {
+  background-color: #004c54;
+  color: #a5acaf;
+}
+
+.team-san-francisco-49ers {
+  background-color: #AA0000;
+  color: #B3995D;
+}
+.team-seattle-seahawks {
+  background-color: #002244;
+  color:  #69BE28;
+}
+.team-tampa-bay-buccaneers {
+  background-color: #D50A0A;
+  color: #FF7900;
+}
+.team-tennessee-titans {
+  background-color: #0C2340;
+  color: #4B92DB;
+}
+.team-washington-commanders {
+  background-color: #5A1414;
+  color: #FFB612;
 }
