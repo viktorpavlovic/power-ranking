@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/power-ranking/static/css/main.73576893.css",
-    "main.js": "/power-ranking/static/js/main.1db7df88.js",
+    "main.css": "/power-ranking/static/css/main.dc6e661a.css",
+    "main.js": "/power-ranking/static/js/main.19dea2cd.js",
     "static/media/american-football-svgrepo-com.svg": "/power-ranking/static/media/american-football-svgrepo-com.72fe106e6f94c5a36509564719e09ad9.svg",
     "index.html": "/power-ranking/index.html",
-    "main.73576893.css.map": "/power-ranking/static/css/main.73576893.css.map",
-    "main.1db7df88.js.map": "/power-ranking/static/js/main.1db7df88.js.map"
+    "main.dc6e661a.css.map": "/power-ranking/static/css/main.dc6e661a.css.map",
+    "main.19dea2cd.js.map": "/power-ranking/static/js/main.19dea2cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.73576893.css",
-    "static/js/main.1db7df88.js"
+    "static/css/main.dc6e661a.css",
+    "static/js/main.19dea2cd.js"
   ]
 }
