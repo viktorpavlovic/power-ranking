@@ -9,7 +9,7 @@ const SuccessModal = ({ yourRanking }) => {
 
   return (
     <div className="success-modal-div">
-      <h1>Tvoj power ranking:</h1>
+      <h1>Tvoj power ranking</h1>
       {yourRanking.map((e, i) => {
         const teamName = e.toLowerCase().replace(/\s+/g, "-");
 
