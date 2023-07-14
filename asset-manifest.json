@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/power-ranking/static/css/main.d5aa245a.css",
+    "main.css": "/power-ranking/static/css/main.149b75f3.css",
     "main.js": "/power-ranking/static/js/main.fbc93da7.js",
     "static/media/new-england.png": "/power-ranking/static/media/new-england.cbb732e8fde465bb1ff4.png",
     "static/media/pittsburg.png": "/power-ranking/static/media/pittsburg.7943ae77bab27cd0ce9e.png",
@@ -34,11 +34,11 @@
     "static/media/bengals.png": "/power-ranking/static/media/bengals.b6ac86e9cccac166a2f7.png",
     "static/media/browns.png": "/power-ranking/static/media/browns.eb63d2c33bd5a9338e55.png",
     "index.html": "/power-ranking/index.html",
-    "main.d5aa245a.css.map": "/power-ranking/static/css/main.d5aa245a.css.map",
+    "main.149b75f3.css.map": "/power-ranking/static/css/main.149b75f3.css.map",
     "main.fbc93da7.js.map": "/power-ranking/static/js/main.fbc93da7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5aa245a.css",
+    "static/css/main.149b75f3.css",
     "static/js/main.fbc93da7.js"
   ]
 }
