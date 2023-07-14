@@ -1,14 +1,44 @@
 {
   "files": {
-    "main.css": "/power-ranking/static/css/main.dc6e661a.css",
-    "main.js": "/power-ranking/static/js/main.19dea2cd.js",
-    "static/media/american-football-svgrepo-com.svg": "/power-ranking/static/media/american-football-svgrepo-com.72fe106e6f94c5a36509564719e09ad9.svg",
+    "main.css": "/power-ranking/static/css/main.a32a909e.css",
+    "main.js": "/power-ranking/static/js/main.5c2406d9.js",
+    "static/media/new-england.png": "/power-ranking/static/media/new-england.cbb732e8fde465bb1ff4.png",
+    "static/media/pittsburg.png": "/power-ranking/static/media/pittsburg.7943ae77bab27cd0ce9e.png",
+    "static/media/99-yrd-logo.png": "/power-ranking/static/media/99-yrd-logo.03a0444a26e827f35410.png",
+    "static/media/jaguars.png": "/power-ranking/static/media/jaguars.e667df04dea1e8b64a06.png",
+    "static/media/tampa.png": "/power-ranking/static/media/tampa.c279b02c8b9c2a626a31.png",
+    "static/media/chicago.png": "/power-ranking/static/media/chicago.bfc03478b1874db4bde2.png",
+    "static/media/atlanta.png": "/power-ranking/static/media/atlanta.fa3ec8a27cc99ff8b222.png",
+    "static/media/raiders.png": "/power-ranking/static/media/raiders.d57798284e7739ad2f46.png",
+    "static/media/infinity.png": "/power-ranking/static/media/infinity.79f7dc956e05adf5cce2.png",
+    "static/media/baltimore.png": "/power-ranking/static/media/baltimore.5d054b2c4f55ebc84406.png",
+    "static/media/arizona.png": "/power-ranking/static/media/arizona.74fb65a93e4359ed6483.png",
+    "static/media/vikings.png": "/power-ranking/static/media/vikings.64f73684a8b86eb71945.png",
+    "static/media/titans.png": "/power-ranking/static/media/titans.757d969211044afb7520.png",
+    "static/media/lions.png": "/power-ranking/static/media/lions.e437a840469e29e935d9.png",
+    "static/media/cowboys.png": "/power-ranking/static/media/cowboys.ac0e563613f127e09bd7.png",
+    "static/media/philadelphia.gif": "/power-ranking/static/media/philadelphia.526e8b0da1948e975e29.gif",
+    "static/media/miami.png": "/power-ranking/static/media/miami.7f98eb72a55a8556e3f6.png",
+    "static/media/niners.png": "/power-ranking/static/media/niners.c0ac861c2cb80e64ee4b.png",
+    "static/media/carolina.png": "/power-ranking/static/media/carolina.3e732371ea67c505fd03.png",
+    "static/media/texans.png": "/power-ranking/static/media/texans.96882cdc5d86169b5ed6.png",
+    "static/media/broncos.png": "/power-ranking/static/media/broncos.0f6f7c6a58522ec9611e.png",
+    "static/media/kansas.png": "/power-ranking/static/media/kansas.4c9406e0f45190e6715f.png",
+    "static/media/colts.png": "/power-ranking/static/media/colts.44902bdd76a52c78a616.png",
+    "static/media/saints.png": "/power-ranking/static/media/saints.e0aa1f755835e50e42e8.png",
+    "static/media/packers.png": "/power-ranking/static/media/packers.ac1b45e37d46065e64ed.png",
+    "static/media/chargers.png": "/power-ranking/static/media/chargers.8ba7c20727c034344c04.png",
+    "static/media/jets.png": "/power-ranking/static/media/jets.a62fac5714c83ac084d9.png",
+    "static/media/seahawks.png": "/power-ranking/static/media/seahawks.6bcbb9a8f463cf2ceda2.png",
+    "static/media/rams.png": "/power-ranking/static/media/rams.ea8bc516ba1cddf96adb.png",
+    "static/media/bengals.png": "/power-ranking/static/media/bengals.b6ac86e9cccac166a2f7.png",
+    "static/media/browns.png": "/power-ranking/static/media/browns.eb63d2c33bd5a9338e55.png",
     "index.html": "/power-ranking/index.html",
-    "main.dc6e661a.css.map": "/power-ranking/static/css/main.dc6e661a.css.map",
-    "main.19dea2cd.js.map": "/power-ranking/static/js/main.19dea2cd.js.map"
+    "main.a32a909e.css.map": "/power-ranking/static/css/main.a32a909e.css.map",
+    "main.5c2406d9.js.map": "/power-ranking/static/js/main.5c2406d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc6e661a.css",
-    "static/js/main.19dea2cd.js"
+    "static/css/main.a32a909e.css",
+    "static/js/main.5c2406d9.js"
   ]
 }
