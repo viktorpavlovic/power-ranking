@@ -1,5 +1,5 @@
 import React from "react";
-import logoBall from "../../Assets/american-football-svgrepo-com.svg";
+import logoBall from "../../Assets/99-yrd-logo.png";
 import "./header.scss";
 
 const Header = () => {

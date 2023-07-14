@@ -9,7 +9,7 @@ import "./power-page.scss";
 const PowerPage = ({ uid }) => {
   const [allTeams, setAllTeams] = useState([]);
   const [allUsersTeams, setAllUsersTeams] = useState([]);
-  console.log(allUsersTeams)
+  
 
   useEffect(() => {
     const fetchAllTeams = async () => {
@@ -77,7 +77,7 @@ const PowerPage = ({ uid }) => {
     return obj;
   }, {});
 
-console.log(sortedTeamPoints);
+
 
   return (
     <div className="div-power-page">

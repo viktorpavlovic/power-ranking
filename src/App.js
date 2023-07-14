@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import PowerPage from "./Pages/PowerPage";
 import "./app.scss";
+import NoInternetConnection from "./Components/NoInternet";
 
 const App = () => {
   const [accessToken, setAccessToken] = useState(
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <div className="div-app">
+      <NoInternetConnection>
       {accessToken ? (
         <Routes>
           <Route path="/power_page" element={<PowerPage uid={uid} />} />
@@ -29,6 +31,7 @@ const App = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       )}
+      </NoInternetConnection>
     </div>
   );
 };

@@ -21,12 +21,11 @@ const SuccessModal = ({ yourRanking }) => {
           </div>
         );
       })}
-      <h3>
-        Ako nisi zadovoljan ovim rankingom klikni na dugme ispod i odradi ga
-        ispocetka
-      </h3>
+      <h4>
+        Napomena, ukoliko ponovo power renkuješ ovaj ranking će biti obrisan i moraćeš da koristiš drugo ime
+      </h4>
       <button onClick={handleClick} className="again-btn">
-        Ponovi
+        Ponovi power ranking
       </button>
     </div>
   );
