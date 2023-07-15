@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/power-ranking/static/css/main.149b75f3.css",
-    "main.js": "/power-ranking/static/js/main.039f864a.js",
+    "main.js": "/power-ranking/static/js/main.58fbe81c.js",
     "static/media/new-england.png": "/power-ranking/static/media/new-england.cbb732e8fde465bb1ff4.png",
     "static/media/pittsburg.png": "/power-ranking/static/media/pittsburg.7943ae77bab27cd0ce9e.png",
     "static/media/99-yrd-logo.png": "/power-ranking/static/media/99-yrd-logo.03a0444a26e827f35410.png",
@@ -35,10 +35,10 @@
     "static/media/browns.png": "/power-ranking/static/media/browns.eb63d2c33bd5a9338e55.png",
     "index.html": "/power-ranking/index.html",
     "main.149b75f3.css.map": "/power-ranking/static/css/main.149b75f3.css.map",
-    "main.039f864a.js.map": "/power-ranking/static/js/main.039f864a.js.map"
+    "main.58fbe81c.js.map": "/power-ranking/static/js/main.58fbe81c.js.map"
   },
   "entrypoints": [
     "static/css/main.149b75f3.css",
-    "static/js/main.039f864a.js"
+    "static/js/main.58fbe81c.js"
   ]
 }
