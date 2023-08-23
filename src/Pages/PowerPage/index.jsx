@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { collection, getDocs, getDoc,doc } from "firebase/firestore";
+import { collection, getDocs, getDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
@@ -9,7 +9,6 @@ import "./power-page.scss";
 const PowerPage = ({ uid }) => {
   const [allTeams, setAllTeams] = useState([]);
   const [allUsersTeams, setAllUsersTeams] = useState([]);
-  
 
   useEffect(() => {
     const fetchAllTeams = async () => {
@@ -23,7 +22,7 @@ const PowerPage = ({ uid }) => {
     };
     fetchAllTeams();
   }, []);
-  
+
   useEffect(() => {
     const fetchAllUsers = async () => {
       const collectionRef = collection(db, "users");
@@ -40,7 +39,7 @@ const PowerPage = ({ uid }) => {
         const userRef = doc(db, "users", user.id);
         const userDoc = await getDoc(userRef);
         const userData = userDoc.data();
-        const userTeamsArray = userData.teams || []; 
+        const userTeamsArray = userData.teams || [];
         userTeams[userName] = userTeamsArray;
       }
 
@@ -51,13 +50,13 @@ const PowerPage = ({ uid }) => {
   }, []);
   const calculateTeamPoints = () => {
     const teamPoints = {};
-  
+
     for (const user in allUsersTeams) {
       const teams = allUsersTeams[user];
-  
+
       teams.forEach((team, index) => {
         const points = teams.length - index;
-        
+
         if (teamPoints.hasOwnProperty(team)) {
           teamPoints[team] += points;
         } else {
@@ -65,19 +64,19 @@ const PowerPage = ({ uid }) => {
         }
       });
     }
-  
+
     return teamPoints;
   };
-  
+
   const teamPoints = calculateTeamPoints();
   const sortedTeamPoints = Object.entries(teamPoints)
-  .sort((a, b) => b[1] - a[1])
-  .reduce((obj, [key, value]) => {
-    obj[key] = value;
-    return obj;
-  }, {});
+    .sort((a, b) => b[1] - a[1])
+    .reduce((obj, [key, value]) => {
+      obj[key] = value;
+      return obj;
+    }, {});
 
-
+  // console.log(sortedTeamPoints);
 
   return (
     <div className="div-power-page">

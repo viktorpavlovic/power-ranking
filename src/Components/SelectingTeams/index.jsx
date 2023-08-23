@@ -74,7 +74,7 @@ const SelectingTeams = ({ allTeams }) => {
 
   };
   let getUid = localStorage.getItem("uid");
-  let uid = getUid.slice(1, -1);
+  let uid = getUid?.slice(1, -1);
   const { handleSubmit, setValue, watch } = useForm();
   const [yourRanking, setYourRanking] = useState(
     JSON.parse(localStorage.getItem("yourRanking")) || []
@@ -84,7 +84,7 @@ const SelectingTeams = ({ allTeams }) => {
   );
   const userDocRef = doc(db, "users", uid);
   const availableTeams = allTeams
-    .slice()
+    ?.slice()
     .sort((a, b) => a.localeCompare(b))
     .filter((team) => {
       const selectedTeams = watch();
@@ -121,7 +121,7 @@ const SelectingTeams = ({ allTeams }) => {
   return (
     <div className="div-selecting-teams" ref={teamRef}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {allTeams.map((_, index) => (
+        {allTeams?.map((_, index) => (
           <div key={index} className="single-select-div">
             <p>Mesto {index + 1}</p>
             <figcaption>
