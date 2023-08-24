@@ -18,41 +18,45 @@ const PowerPage = ({ uid }) => {
         id: doc.id,
         data: doc.data(),
       }));
-      setAllTeams(teamsData[0]?.data?.TeamNames);
+      setAllTeams(teamsData[0]?.data?.allTeams);
     };
     fetchAllTeams();
   }, []);
 
+  const fetchAllUsers = async () => {
+    const collectionRef = collection(db, "users");
+    const querySnapshot = await getDocs(collectionRef);
+    const usersData = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      data: doc.data(),
+    }));
+
+    const userTeams = {};
+
+    for (const user of usersData) {
+      const userName = user.data.userName;
+      // const userRef = doc(db, "users", user.id);
+      // const userDoc = await getDoc(userRef);
+      // const userData = userDoc.data();
+      const userTeamsArray = user.data.teams || [];
+      userTeams[userName] = userTeamsArray;
+    }
+
+    // console.log(userTeams);
+
+    setAllUsersTeams(userTeams);
+  };
+
   useEffect(() => {
-    const fetchAllUsers = async () => {
-      const collectionRef = collection(db, "users");
-      const querySnapshot = await getDocs(collectionRef);
-      const usersData = querySnapshot.docs.map((doc) => ({
-        id: doc.id,
-        data: doc.data(),
-      }));
-
-      const userTeams = {};
-
-      for (const user of usersData) {
-        const userName = user.data.userName;
-        const userRef = doc(db, "users", user.id);
-        const userDoc = await getDoc(userRef);
-        const userData = userDoc.data();
-        const userTeamsArray = userData.teams || [];
-        userTeams[userName] = userTeamsArray;
-      }
-
-      setAllUsersTeams(userTeams);
-    };
-
     fetchAllUsers();
   }, []);
+
   const calculateTeamPoints = () => {
     const teamPoints = {};
 
     for (const user in allUsersTeams) {
       const teams = allUsersTeams[user];
+      // console.log(user, allUsersTeams);
 
       teams.forEach((team, index) => {
         const points = teams.length - index;
@@ -63,6 +67,7 @@ const PowerPage = ({ uid }) => {
           teamPoints[team] = points;
         }
       });
+      debugger;
     }
 
     return teamPoints;
@@ -76,7 +81,7 @@ const PowerPage = ({ uid }) => {
       return obj;
     }, {});
 
-  // console.log(sortedTeamPoints);
+  console.log(sortedTeamPoints);
 
   return (
     <div className="div-power-page">
